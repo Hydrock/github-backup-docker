@@ -7,17 +7,15 @@ services:
     container_name: "github-backup"
     hostname: "github-backup"
     restart: always
-
     logging:
       driver: json-file
       options:
         max-size: "10m"
         max-file: "5"
-
     environment:
-      - GITHUB_USER
-      - TOKEN=${GITHUB_ACCESS_TOKEN}
-      - MAX_BACKUPS=10
-      - TIME_ZONE=America/Chicago
+      - GITHUB_USER=Hydrock
+      - TOKEN=******
+      - MAX_BACKUPS=300
+      - TIME_ZONE=Europe/Moscow
     volumes:
       - ./var:/srv/var

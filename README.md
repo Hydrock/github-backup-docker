@@ -19,3 +19,11 @@ Dockerized version of [python-github-backup](https://github.com/josegonzalez/pyt
 
 1. Clone this repo
 2. run `docker-compose build`
+
+## Other Methods
+
+<https://github.com/josegonzalez/python-github-backup>
+
+export ACCESS_TOKEN=******
+ORGANIZATION=alfa-code
+github-backup $ORGANIZATION -P -t $ACCESS_TOKEN -o ./var/alfa-code --all -O
